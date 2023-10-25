@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+// очень хочется пример того, что должно получиться, картинку. У меня плохо с воображением)
+// сколько страниц должно быть? главная со списком слов и карточек. то есть должны быть еще списки карточек?
+
+// Что должно быть в результате (через 8 недель):
+// - список всех существующих слов. У каждого слова есть основное значение, транскрипция, перевод, тема. У каждого слова должна быть возможность его удаления и редактирования.
+// Также должна быть возможность добавления слов; *сделать добавление с любого места в приложении (вроме редактирования и удаления слова)
+// - карточка слова, у которой есть основное значение, транскрипция, перевод, тема; *неплохо сделать не только англо-русский. так, чтобы при добавлении указывать язык и записывать его либо в новое слово, либо если есть совпадение в массиве - в новое поле к имеющемуся.
+// - главная страница, где отображаются списки слов и карточек.
+
+
+import './_App.scss';
+
+import { WordList } from './components/WordList/WordList';
+import {Button} from './components/Button/Button.jsx';
+
+import { words } from './data/data';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className="WordList">
+				<div className="word">
+					<h2 className="title">слово</h2>
+					<div className="description">
+						<div className="text">транскрипция</div>
+						<div className="text">перевод</div>
+						<div className="text">теги</div>
+					</div>
+					<div className="edit">
+						<Button name="Add"/>
+					</div>
+				</div>
+				{
+					words.map((word, id) => (
+						<WordList key={id} word={word} />
+					))
+				}
+			</div>
+		</div>
+	);
 }
 
 export default App;

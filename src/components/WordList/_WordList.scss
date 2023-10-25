@@ -1,0 +1,22 @@
+.word {
+    display: flex;
+    align-items: center;
+    height: min-content;
+    padding: 1vh;
+    border: 1px solid white;
+    justify-content: space-around;
+}
+
+.title {
+    width: 20%;
+}
+
+.description {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.edit {
+    display: flex;
+}

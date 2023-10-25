@@ -9,7 +9,7 @@
         "quotes": ["error", "single"],
         "jsx-quotes": ["error", "prefer-double"],
         "prefer-const": "error",
-        "indent": ["warn", 2],
+        "indent": ["warn", "tab"],
         "max-len": ["off", {"code": 120}],
         "semi": ["warn", "always"],
         "import/order": ["warn", {
