@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './styles/_list.scss';
+import '../styles/_list.scss';
 
 import { WordList } from '../components/WordList/WordList.jsx';
 import { Button } from '../components/Button/Button.jsx';
 
 import { words } from '../data/data.js';
 
-function List() {
+export function ListPage() {
     return (
         <div className="App">
             <div className="WordList">
@@ -27,5 +27,3 @@ function List() {
         </div>
     );
 }
-
-export default List;

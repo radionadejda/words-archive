@@ -5,10 +5,19 @@
 // - главная страница, где отображаются списки слов и карточек.
 // Три основных страницы, главная, с таблицей и с игрой(это уже финальный вариант). Вы же будете делать все постепенно, сначала структуру, затем что-то еще и далее.
 
-import './_App.scss';
+import './styles/_App.scss';
+
+import { ListPage } from './pages/ListPage';
+import { CardPage } from './pages/CardPage';
+// import { NotFoundPage } from './pages/NotFoundPage';
 
 function App() {
-    return <div className="App">hello n</div>;
+    return (
+        <div className="App">
+            <ListPage />
+            <CardPage />
+        </div>
+    );
 }
 
 export default App;
