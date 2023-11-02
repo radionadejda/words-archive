@@ -1,0 +1,16 @@
+@import './vars';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    text-align: center;
+    background-color: $bg;
+}
+
+.WordList {
+    height: 50vh;
+}
