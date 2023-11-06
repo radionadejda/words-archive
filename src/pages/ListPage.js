@@ -1,6 +1,5 @@
-import React from 'react';
-
-import '../styles/_list.scss';
+import '../styles/_App.scss';
+import '../styles/_ListPage.scss';
 
 import { WordList } from '../components/WordList/WordList.jsx';
 import { Button } from '../components/Button/Button.jsx';

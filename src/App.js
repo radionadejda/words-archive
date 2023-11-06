@@ -5,17 +5,25 @@
 // - главная страница, где отображаются списки слов и карточек.
 // Три основных страницы, главная, с таблицей и с игрой(это уже финальный вариант). Вы же будете делать все постепенно, сначала структуру, затем что-то еще и далее.
 
+//будет главная, на ней пока только англ, и выбор переход к карточкам или к таблице. когда-нибудь мб сделать выбор разных языков, мб карточки и таблица будут на одной странице и сделать по странице для каждого языка. совсем эпик было бы сделать чтобы страница с тренингом была одна и отрисовывалась по массиву в зависимости от того, что выбрано на главной (или в переключателе в хедере). как сделать передачу вбранного с одной страницы на другую?
+
 import './styles/_App.scss';
 
-import { ListPage } from './pages/ListPage';
-import { CardPage } from './pages/CardPage';
+// import { ListPage } from './pages/ListPage';
+import { MainPage } from './pages/MainPage';
+
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
+
+// import { CardPage } from './pages/CardPage';
 // import { NotFoundPage } from './pages/NotFoundPage';
 
 function App() {
     return (
         <div className="App">
-            <ListPage />
-            <CardPage />
+            <Header />
+            <MainPage />
+            <Footer />
         </div>
     );
 }
