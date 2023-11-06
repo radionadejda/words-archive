@@ -10,8 +10,7 @@
 .App {
     text-align: center;
     background-color: $bg;
-}
-
-.WordList {
-    height: 50vh;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
 }

@@ -5,8 +5,8 @@ import { Button } from '../Button/Button';
 export function WordList(props) {
     const { english, transcription, russian, tags } = props.word;
     return (
-        <div className="word">
-            <h2 className="title">{english}</h2>
+        <div className="row">
+            <h2 className="word">{english}</h2>
             <div className="description">
                 <div className="text">{transcription}</div>
                 <div className="text">{russian}</div>
